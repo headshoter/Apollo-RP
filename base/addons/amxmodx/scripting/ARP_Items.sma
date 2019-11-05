@@ -148,7 +148,7 @@ public NativeFilter(const Name[],Index,Trap)
     return PLUGIN_CONTINUE
 }
 
-public client_disconnect(id)
+public client_disconnected(id)
 {
 	g_Tazered[id] = 0
 
