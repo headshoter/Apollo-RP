@@ -1256,7 +1256,7 @@ public plugin_end()
 	SQL_FreeHandle(g_SqlHandle)
 }
 		
-public client_disconnect(id)	
+public client_disconnected(id)	
 {
 	if(g_GotInfo[id] >= STD_USER_QUERIES && !g_PluginEnd)
 	{
