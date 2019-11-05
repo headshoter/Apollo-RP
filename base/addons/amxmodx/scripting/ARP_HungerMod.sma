@@ -83,9 +83,9 @@ public SetHunger()
 }
 
 public EventDeathMsg()
-	client_disconnect(read_data(2))
+	g_Starving[read_data(2)] = g_Eating[read_data(2)] = 0
 
-public client_disconnect(id)
+public client_disconnected(id)
 	g_Starving[id] = g_Eating[id] = 0
 
 public ARP_Salary(id)
