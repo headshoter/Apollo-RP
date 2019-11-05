@@ -126,7 +126,7 @@ public EventDeathMsg()
 	}
 }
 
-public client_disconnect(id)
+public client_disconnected(id)
 	if(g_RobCurProfile && id == g_RobCurPlayer && g_RobProfile[g_RobCurProfile][STOPON][0] & LEAVE)
 	{
 		new Data[2]
