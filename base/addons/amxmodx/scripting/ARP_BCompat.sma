@@ -67,7 +67,7 @@ public ItemHandler(id,ARPItemID)
 	while(MoreTravTrie(Iter))
 	{
 		ReadTravTrieString(Iter,OldCommand,63)
-		strbreak(OldCommand,Command,63,ItemIDStr2,9)
+		argbreak(OldCommand,Command,63,ItemIDStr2,9)
 			
 		if(equali(ItemIDStr,ItemIDStr2))
 			break
@@ -111,7 +111,7 @@ public CmdSetItems()
 	new OldServerCmd[64],ServerCmd[64],ARPItemID,ItemIDStr[10]
 	TravTrieGetStringEx(g_ArrayTrie,ItemID,OldServerCmd,63)
 	
-	strbreak(OldServerCmd,ServerCmd,63,ItemIDStr,9)
+	argbreak(OldServerCmd,ServerCmd,63,ItemIDStr,9)
 	remove_quotes(ServerCmd)
 	trim(ServerCmd)
 	
