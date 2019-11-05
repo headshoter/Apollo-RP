@@ -453,7 +453,7 @@ public JailCommand(id)
 	return PLUGIN_HANDLED
 }
 
-public client_disconnect(id)
+public client_disconnected(id)
 {	
 	g_MenuPage[id] = 0
 	g_Died[id] = 0
