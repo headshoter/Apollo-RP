@@ -260,7 +260,7 @@ public EventDeathMsg()
 	g_Bugged[id] = 0
 }
 
-public client_disconnect(id)
+public client_disconnected(id)
 {
 	BreakLine(id," has disconnected. The phone has been hung up.")
 	
